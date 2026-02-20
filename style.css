@@ -114,7 +114,8 @@ body {
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.2s;
-    min-width: 185px;
+    max-width: 185px;
+    width: 100%;
     text-align: center;
 }
 
@@ -341,6 +342,17 @@ body {
         order: 0;
         max-width: 100%;
         max-width: 460px;
+    }
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        max-width: 436px;
+        width: 100%;
+    }
+
+    .tab {
+        padding: 10px 0;
     }
 
     .payment-card {
