@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="fonts/Gibson/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="mobile-header">
+            <button class="mobile-hamburger" aria-label="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="mobile-logo">Logos</div>
+            <div class="mobile-avatar">
+                <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <div class="logo">Logos</div>
+            <nav class="sidebar-nav">
+                <a href="#">Communicate</a>
+                <a href="#">Schedule</a>
+                <a href="#">Grades</a>
+                <a href="#">Attendance</a>
+                <a href="#">Counseling</a>
+                <a href="#">Alerts</a>
+                <a href="#">Transcript</a>
+                <a href="#">Re-Enroll</a>
+                <a href="#" class="active">Billing</a>
+                <a href="#">Service Hours</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-nav">
+                <div class="tabs">
+                    <div class="tab active">Balance</div>
+                    <div class="tab">Statements</div>
+                    <div class="tab">AutoPay</div>
+                </div>
+                <div class="user-actions">
+                    <div class="action-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                            <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg>
+                        <span>Print</span>
+                    </div>
+                    <div class="action-item">
+                        <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Bartho...</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-header">
+                <h1>Balance</h1>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="left-panel">
+                    <h2>Total Outstanding Balances</h2>
+                    <table class="balance-table">
+                        <tr>
+                            <td>Enrollment/ Registration Fees</td>
+                            <td class="amount">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Field Trips 6th Grade</td>
+                            <td class="amount">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday School</td>
+                            <td class="amount bold">$1,602.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Fee Football</td>
+                            <td class="amount">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuition</td>
+                            <td class="amount bold">$5,768.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Fees</td>
+                            <td class="amount">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Fees</td>
+                            <td class="amount">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday School Payment</td>
+                            <td class="amount green">-$930.00</td>
+                        </tr>
+                        <tr>
+                            <td>Multi-Child Discount</td>
+                            <td class="amount green">-$489.50</td>
+                        </tr>
+                        <tr>
+                            <td>Registration Fees</td>
+                            <td class="amount">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuition Payment</td>
+                            <td class="amount green">-$4,405.50</td>
+                        </tr>
+                    </table>
+
+                    <h2 class="summary-heading">Summary</h2>
+                    <table class="balance-table summary-table">
+                        <tr>
+                            <td>Statement Balance</td>
+                            <td class="amount bold">$1,545.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="right-panel">
+                    <div class="payment-card">
+                        <div class="card-column">
+                            <div class="card-label">Total Balance</div>
+                            <div class="card-value">$1,545.00</div>
+                            <div class="card-note">If you are making a one time payment for something, please add a
+                                note.</div>
+                        </div>
+                        <div class="card-column right-side">
+                            <div class="card-label">Remaining Balance</div>
+                            <div class="card-value">$1,545.00</div>
+                            <div class="card-subtext">Payment Due: 06/05/2024</div>
+                            <button class="btn-primary">Go to Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

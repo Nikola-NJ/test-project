@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonBoldItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonBoldItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonBoldItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson Book';
+    src: url('subset-FONTSPRINGDEMO-GibsonBookRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonBookRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonBookRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonBookRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonBookRegular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson Book';
+    src: url('subset-FONTSPRINGDEMO-GibsonBookItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonBookItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonBookItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonBookItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonBookItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonHeavyRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonHeavyRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonHeavyRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonHeavyRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonHeavyRegular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonHeavyItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonHeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonHeavyItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonHeavyItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonHeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonLightRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonLightRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonLightRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonLightRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonLightRegular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonLightLightItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonLightLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonLightLightItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonLightLightItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonLightLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonMediumRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonMediumRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonMediumRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonMediumRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonMediumRegular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonMediumItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonMediumItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonMediumItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonMediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonSemiboldRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonSemiboldRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonSemiboldRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonSemiboldRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonSemiboldRegular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonSemiboldItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonSemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonSemiboldItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonSemiboldItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonSemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonThinRegular.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonThinRegular.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonThinRegular.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonThinRegular.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonThinRegular.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonThinItalic.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonThinItalic.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonThinItalic.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gibson';
+    src: url('subset-FONTSPRINGDEMO-GibsonBold.eot');
+    src: url('subset-FONTSPRINGDEMO-GibsonBold.eot?#iefix') format('embedded-opentype'),
+        url('subset-FONTSPRINGDEMO-GibsonBold.woff2') format('woff2'),
+        url('subset-FONTSPRINGDEMO-GibsonBold.woff') format('woff'),
+        url('subset-FONTSPRINGDEMO-GibsonBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
