@@ -173,6 +173,23 @@ body {
     border-color: #005890;
 }
 
+.action-item .user-photo {
+    display: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--text-dark);
+}
+
+.action-item:active .avatar-icon {
+    display: none;
+}
+
+.action-item:active .user-photo {
+    display: block;
+}
+
 .content-header {
     margin-bottom: 32px;
 }
