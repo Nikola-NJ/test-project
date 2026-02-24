@@ -13,12 +13,9 @@
     <div class="app-container">
         <header class="mobile-header">
             <button class="mobile-hamburger" aria-label="Menu">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             <div class="mobile-logo">Logos</div>
             <div class="mobile-avatar">
@@ -55,21 +52,16 @@
                 </div>
                 <div class="user-actions">
                     <div class="action-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-                            <rect x="6" y="14" width="12" height="8"></rect>
-                        </svg>
+                        <div class="item-box">
+                            <img class="item-icon" src="images/print_icon.png" alt="">
+                        </div>
                         <span>Print</span>
                     </div>
                     <div class="action-item">
-                        <img class="user-photo" src="https://i.pravatar.cc/150?img=11" alt="User avatar">
-                        <svg class="avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
+                        <div class="item-box">
+                            <img class="user-photo" src="https://i.pravatar.cc/150?img=11" alt="User avatar">
+                            <img class="item-icon avatar-icon" src="images/user_icon.png" alt="">
+                        </div>
                         <span>Bartho...</span>
                     </div>
                 </div>
@@ -133,24 +125,33 @@
                     <table class="balance-table summary-table">
                         <tr>
                             <td>Statement Balance</td>
-                            <td class="amount bold">$1,545.00</td>
+                            <td class="amount bold dark-text">$1,545.00</td>
                         </tr>
                     </table>
                 </div>
 
                 <div class="right-panel">
                     <div class="payment-card">
-                        <div class="card-column">
-                            <div class="card-label">Total Balance</div>
-                            <div class="card-value">$1,545.00</div>
-                            <div class="card-note">If you are making a one time payment for something, please add a
-                                note.</div>
+                        <div class="first-row">
+                            <div class="card-column">
+                                <div class="card-label">Total Balance</div>
+                                <div class="card-value">$1,545.00</div>
+                            </div>
+                            <div class="card-column right-side">
+                                <div class="card-label">Remaining Balance</div>
+                                <div class="card-value">$1,545.00</div>
+                                <div class="card-subtext">Payment Due: 06/05/2024</div>
+                            </div>
                         </div>
-                        <div class="card-column right-side">
-                            <div class="card-label">Remaining Balance</div>
-                            <div class="card-value">$1,545.00</div>
-                            <div class="card-subtext">Payment Due: 06/05/2024</div>
-                            <button class="btn-primary">Go to Payment</button>
+                        <div class="second-row">
+                            <div class="card-column2">
+                                <div class="card-note">If you are making a one time payment for something, please add a
+                                    note.
+                                </div>
+                            </div>
+                            <div class="card-column2 card-column2-btn">
+                                <button class="btn-primary">Go to Payment</button>
+                            </div>
                         </div>
                     </div>
                 </div>

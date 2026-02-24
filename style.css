@@ -1,14 +1,13 @@
 :root {
     --sidebar-bg: #002942;
     --sidebar-active: #005890;
-    --sidebar-text: #c2d5e0;
+    --sidebar-text: #fff;
     --sidebar-text-active: #ffffff;
     --bg-main: #ffffff;
     --bg-card: #fff;
     --text-dark: #282828;
     --text-gray: #4D4D4D;
     --text-gray-amount: #949494;
-    --text-light-gray: #a1a1ae;
     --green: #138000;
     --btn-blue: #02669e;
 }
@@ -34,13 +33,12 @@ body {
     height: 100%;
     max-width: 1366px;
     background-color: var(--bg-main);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
     min-width: 160px;
     background-color: var(--sidebar-bg);
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     padding: 16px 8px;
@@ -50,13 +48,14 @@ body {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+    display: inline-block;
 }
 
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
 }
 
 .sidebar-nav a {
@@ -64,13 +63,11 @@ body {
     text-decoration: none;
     padding: 8px 16px;
     font-size: 16px;
-    font-weight: 500;
     letter-spacing: 0.5px;
     line-height: 24px;
     transition: background-color 0.2s;
     border-radius: 12px;
 }
-
 
 .sidebar-nav a:hover:not(.active) {
     background-color: #1D4157;
@@ -89,34 +86,44 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 10px 24px 100px 24px;
+    padding: 0 24px 160px 24px;
+    max-width: 1034px;
+    width: 100%;
 }
 
 .top-nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 40px;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 12px 0;
 }
 
 .tabs {
     display: flex;
-    padding: 4px;
+    flex-wrap: wrap;
+    padding: 2px;
     gap: 4px;
+    background-color: rgba(118, 118, 128, 0.12);
+    border-radius: 10px;
+    max-width: 567px;
+    width: 100%;
 }
 
 .tab {
-    padding: 10px 48px;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
-    font-weight: 500;
     line-height: 24px;
+    letter-spacing: 0.5px;
     color: var(--text-gray);
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.2s;
     max-width: 185px;
     width: 100%;
-    text-align: center;
 }
 
 .tab:hover:not(.active) {
@@ -124,14 +131,23 @@ body {
 }
 
 .tab.active {
+    background: #fff;
     box-shadow:
-        0px 4px 12px rgba(0, 0, 0, 0.18),
-        0px 2px 4px rgba(0, 0, 0, 0.10);
+        0px 3px 8px 0px rgba(0, 0, 0, 0.12),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.04);
 }
 
 .user-actions {
     display: flex;
-    gap: 32px;
+    align-items: center;
+    gap: 4px;
+}
+
+.item-box {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -139,39 +155,31 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    width: 52px;
+    height: 40px;
     font-size: 12px;
-    font-weight: 500;
-    color: var(--text-dark);
+    color: var(--text-gray);
     cursor: pointer;
     transition: color 0.2s;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .action-item:hover {
     color: #005890;
 }
 
-.action-item:hover svg {
-    color: #005890;
+.action-item:hover:active {
+    color: var(--text-gray);
 }
 
-.action-item svg {
-    width: 22px;
-    height: 22px;
-    color: var(--text-dark);
-    transition: color 0.2s;
+.action-item:hover:active .item-icon {
+    filter: none;
 }
 
-.action-item svg.avatar-icon {
-    width: 22px;
-    height: 22px;
-    border: 2px solid var(--text-dark);
-    border-radius: 50%;
-    transition: border-color 0.2s, color 0.2s;
-}
-
-.action-item:hover svg.avatar-icon {
-    border-color: #005890;
+.action-item:hover .item-icon {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(94%) saturate(2716%) hue-rotate(187deg) brightness(89%) contrast(104%);
 }
 
 .action-item .user-photo {
@@ -192,11 +200,12 @@ body {
 }
 
 .content-header {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .content-header h1 {
     font-size: 32px;
+    line-height: 40px;
     font-weight: 600;
     color: var(--text-dark);
 }
@@ -213,9 +222,10 @@ body {
 
 .left-panel h2 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text-dark);
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    line-height: 26px;
 }
 
 .balance-table {
@@ -224,22 +234,30 @@ body {
 }
 
 .balance-table td {
-    padding: 0 0 10px 0;
+    padding: 0 0 8px 0;
     font-size: 16px;
     letter-spacing: 0.5px;
     line-height: 24px;
     color: var(--text-dark);
 }
 
+.balance-table tr:last-child td {
+    padding-bottom: 0;
+}
+
+.balance-table td.amount.bold.dark-text {
+    color: var(--text-dark);
+}
+
 .balance-table td.amount {
     text-align: right;
     color: var(--text-gray-amount);
+    font-weight: 500;
 }
 
 .balance-table td.amount.bold {
-    font-weight: 500;
-    color: var(--text-grey);
-    letter-spacing: -0.15px;
+    color: var(--text-gray);
+    letter-spacing: 0.15px;
 }
 
 .balance-table td.amount.green {
@@ -249,16 +267,28 @@ body {
 }
 
 .summary-heading {
-    margin-top: 30px;
+    margin: 24px 0 16px 0;
 }
 
 .right-panel {
-    width: 480px;
+    width: 466px;
 }
 
 .payment-card {
+    background: #F5F5F5;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.first-row {
     display: flex;
-    gap: 32px;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.second-row {
+    display: flex;
+    gap: 16px;
 }
 
 .card-column {
@@ -269,13 +299,20 @@ body {
     text-align: center;
 }
 
+.card-column2 {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
 .card-label {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.25px;
     font-weight: 500;
     color: var(--text-gray);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .card-value {
@@ -290,28 +327,36 @@ body {
     line-height: 20px;
     letter-spacing: 0.25px;
     color: var(--text-gray);
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .card-note {
-    margin-top: auto;
     letter-spacing: 0.4px;
     font-size: 12px;
-    color: var(--text-light-gray);
+    line-height: 16px;
+    color: var(--text-gray-amount);
+    text-align: center;
 }
 
 .btn-primary {
-    margin-top: 24px;
-    background-color: var(--btn-blue);
-    color: white;
-    border: none;
+    width: 188px;
+    color: #fff;
+    border: 0;
+    border-top: 0.5px solid rgba(148, 148, 148, 0.75);
+    /* #949494BF */
+    box-shadow:
+        0px 0px 0px 0.5px rgba(0, 0, 0, 0.05),
+        /* #0000000D */
+        0px 0.5px 2.5px 0px rgba(0, 0, 0, 0.30);
+    /* #0000004D */
+    background: linear-gradient(357.03deg, #005890 2.66%, #2A78A8 109.42%);
     border-radius: 24px;
-    padding: 12px 24px;
+    padding: 5.5px 0;
     font-size: 16px;
     font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.15px;
     cursor: pointer;
-    box-shadow: 0 4px 6px -1px rgba(2, 102, 158, 0.3);
-    width: 100%;
     transition: background-color 0.2s;
 }
 
@@ -352,7 +397,16 @@ body {
     }
 
     .tab {
-        padding: 10px 0;
+        padding: 6px 0;
+        max-width: 141px;
+    }
+
+    .card-note {
+        text-align: left;
+    }
+
+    .second-row {
+        gap: 8px;
     }
 
     .payment-card {
@@ -363,6 +417,13 @@ body {
         align-items: flex-start;
         text-align: left;
     }
+
+    .card-column2-btn {
+        display: flex;
+        justify-content: flex-end;
+        flex: none;
+    }
+
 }
 
 /*Mobile breakpoint */
@@ -377,7 +438,7 @@ body {
         align-items: center;
         justify-content: space-between;
         background-color: var(--sidebar-bg);
-        padding: 14px 20px;
+        padding: 9px 20px;
         width: 100%;
         position: sticky;
         top: 0;
@@ -389,21 +450,29 @@ body {
         border: none;
         cursor: pointer;
         padding: 0;
-        color: white;
+        color: #fff;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        gap: 3px;
+        width: 24px;
+        height: 24px;
     }
 
-    .mobile-hamburger svg {
-        width: 22px;
-        height: 22px;
-        color: white;
+    .mobile-hamburger span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: currentColor;
+        border-radius: 1px;
     }
 
     .mobile-logo {
         font-size: 24px;
         font-weight: 600;
-        color: white;
+        color: #fff;
+        line-height: 24px;
     }
 
     .mobile-avatar {
@@ -412,9 +481,9 @@ body {
     }
 
     .mobile-avatar .avatar-icon {
-        width: 24px;
-        height: 24px;
-        color: white;
+        width: 20px;
+        height: 20px;
+        color: #fff;
         border: 2px solid white;
         border-radius: 50%;
     }
@@ -426,14 +495,13 @@ body {
     }
 
     .main-content {
-        padding: 0 0 60px 0;
+        padding: 16px 16px 34px 16px;
     }
 
     .top-nav {
         flex-direction: column;
         margin-bottom: 0;
-        padding: 12px 16px;
-        border-bottom: 1px solid #e5e7eb;
+        padding: 0;
     }
 
     .user-actions {
@@ -449,14 +517,11 @@ body {
     .tab {
         flex: 1;
         min-width: 0;
-        padding: 8px 4px;
-        font-size: 14px;
-        line-height: 20px;
+        padding: 6px 0;
     }
 
     .content-header {
-        padding: 16px 16px 8px;
-        margin-bottom: 0;
+        margin: 24px 0;
     }
 
     .content-header h1 {
@@ -464,50 +529,50 @@ body {
     }
 
     .right-panel {
-        padding: 12px 0 20px;
-    }
-
-    .payment-card {
-        padding: 20px 24px;
-        gap: 16px;
-    }
-
-    .card-value {
-        font-size: 28px;
-        line-height: 32px;
+        padding: 0;
     }
 
     .card-note {
-        line-height: 16px;
+        text-align: left;
+        color: #6D6D6D;
+    }
+
+    .payment-card {
+        padding: 16px;
+        gap: 16px;
     }
 
     .btn-primary {
-        margin-top: 24px;
-        margin-bottom: 14px;
-        padding: 10px 0;
+        padding: 6px 0;
         text-align: center;
         font-size: 16px;
         border-radius: 24px;
         letter-spacing: 0.15px;
         line-height: 24px;
         font-weight: 600;
+        width: 140px;
     }
 
     .left-panel {
-        padding: 20px 16px 0;
+        padding: 24px 0 0 0;
     }
 
     .left-panel h2 {
-        font-size: 17px;
-        margin-bottom: 12px;
+        font-size: 20px;
+        margin-bottom: 16px;
     }
 
-    .balance-table td {
-        font-size: 14px;
-        padding: 0 0 8px 0;
+    .card-column2-btn {
+        display: flex;
+        justify-content: unset;
+        flex: 1;
     }
 
-    .summary-heading {
-        margin-top: 20px;
+    .first-row {
+        gap: 32px;
+    }
+
+    .second-row {
+        gap: 32px;
     }
 }
