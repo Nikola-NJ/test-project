@@ -394,6 +394,7 @@ body {
         justify-content: space-between;
         max-width: 436px;
         width: 100%;
+        flex-wrap: nowrap;
     }
 
     .tab {
